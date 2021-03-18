@@ -98,7 +98,7 @@ int main(void)
   {
 	////////////////////////////////////////
     /* USER CODE END WHILE */
-	if(HAL_GetTick() - TimeStamp >= 100)
+	if(HAL_GetTick() - TimeStamp >= 5)
 	{
 		HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
 		TimeStamp = HAL_GetTick();
